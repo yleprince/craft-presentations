@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>craft ai</title>
+		<link rel="icon" href="http://www.craft.ai/images/favicons/android-chrome-192x192.png">
+
+		<meta name="description" content="Presentation for the UTC">
+		<meta name="author" content="Yrieix Leprince">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/craft.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="figures/robot.jpeg">
+					<h1>How AI helps humans?</h1>
+					<h4>DataVenture - <span id='craftaitypo'>craft ai</span></h4>
+					<p>
+						<small>2019-01-25 @UTC</small>
+					</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>Virtual Coaching</h2>
+						<p>
+							What is coaching ?
+						</p>
+					</section>
+					<section>
+						<h2>Fitness coach</h2>
+						<img data-src="https://lh6.googleusercontent.com/QtLbXTYCy-KPNi2Fz4-dKUrZgA_vuvvfdMGrMrQjMjOdgzQUFfn97EhomefLkdGd17FEmDRduepBnhszSErSDy0pwPqug74FkpjZsZFWCbN13XhYl_wiEBPH1lfCeo4PguKZyRcZUcI" alt="training carrot">
+					</section>
+					<section data-background="figures/skinny.jpg">
+						<h2>John the 01/01</h2>
+					</section>
+					<section data-background="figures/iphone.jpeg">
+						<h2>Coaching app</h2>
+					</section>
+
+
+				</section>
+
+				<section>
+					<section data-background="figures/data.jpeg">
+						<h2>Data</h2>
+						<h3>📈</h3>
+					</section>
+
+					<section>
+						<h2>Preprocessing</h2>
+
+						<table>
+							<thead>
+								<tr>
+									<th><code>date</code></th>
+									<th><code>intensity</code></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>2019/01/01</td>
+									<td>9.84</td>
+								</tr>
+								<tr>
+									<td>2019/01/02</td>
+									<td>8.38</td>
+								</tr>
+								<tr>
+									<td>...</td>
+									<td>...</td>
+								</tr>
+							</tbody>
+						</table>
+
+					</section>
+
+					<section>
+						<h2>Timeseries</h2>
+						<img data-src="figures/ts00.png" alt="training carrot">
+					</section>
+
+					<section>
+						<h2>Preprocessing</h2>
+						<p>How to add more intelligence?</p>
+					</section>
+
+					<section data-background="http://i.giphy.com/IjmMzurYulKEw.gif">
+						<h3>📅 & 🌞</h3>
+					</section>
+
+					<section>
+						<h2>Preprocessing</h2>
+							<pre><code class="hljs" data-trim contenteditable>
+		"date","intensity","day_of_week","weather"
+		2019/01/01,9.84,Wed,"cloudy"
+		2019/01/02,8.38,Thu,"sunny"
+							</code></pre>
+					</section>
+
+				</section>
+
+
+
+				<section>
+					<section>
+						<h2>Building a model</h2>
+						<iframe src="https://giphy.com/embed/OMeGDxdAsMPzW" width="480" height="280" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+					</section>
+
+					<section>
+						<h2>Timeseries: the <b>reality</b></h2>
+						<img data-src="figures/ts01.png" alt="training carrot">
+					</section>
+
+					<section>
+						<h2>❤ Continuous Learning ❤</h2>
+						<p><a href="https://beta.craft.ai/shared/r1EC3FPQV">John's craft ai model</a></p>
+					</section>
+
+					<section>
+						<h2>Predictions</h2>
+
+						<table>
+							<thead>
+								<tr>
+									<th><code>date</code></th>
+									<th><code>day_of_week</code></th>
+									<th><code>weather</code></th>
+									<th><code>intensity</code></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>2019/06/01</td>
+									<td>Mon</td>
+									<td>"sunny"</td>
+									<td>???</td>
+								</tr>
+								<tr>
+									<td>2019/06/02</td>
+									<td>Tue</td>
+									<td>"cloudy"</td>
+									<td>???</td>
+								</tr>
+								<tr>
+									<td>...</td>
+									<td>...</td>
+									<td>...</td>
+									<td>...</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>			
+	
+					<section>
+						<h2>Decision</h2>
+						<img src="http://i.giphy.com/WPKxSZfgVj3vW.gif">
+					</section>	
+					<section>
+						<h2>Decision: eXplainable AI</h2>
+						<img src="http://i.giphy.com/l0MYKfrEMRw1dYkus.gif">
+					</section>
+	
+					<section data-background="figures/muscle.jpg">
+						<h2>John right now</h2>
+					</section>
+				</section>
+
+
+				<section>
+					<section>
+						<h2>
+							Backstage
+						</h2>
+						<p>How an API is working?</p>
+					</section>
+					<section data-background="figures/api.png"></section>
+					<section data-background="figures/infra.png"></section>
+					<section data-background="figures/devops.png"></section>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						####  DataVenture - UTC
+						made with <i class="heart"></i> by
+
+						![alt text](http://www.craft.ai/media/craft-transparent.png "Logo Craft ai")
+					</textarea>
+				</section>
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
